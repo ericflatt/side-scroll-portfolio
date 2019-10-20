@@ -317,17 +317,14 @@ body {
   text-align: center; }
 
 .projectLinks {
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
 
 .projectLinks:hover {
   position: relative; }
 
-.projectLinks:hover::after {
-  content: url(../img/headshot.jpg);
-  display: block;
-  position: absolute;
-  left: 123px;
-  top: 56px; }
+.projectHover {
+  color: none; }
 
 .myName:hover {
   color: pink;
@@ -351,11 +348,28 @@ span {
   cursor: pointer;
   transition: .2s ease; }
 
+.dot {
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 10px;
+  display: block;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  width: 5px; }
+
+.dot2 {
+  bottom: 20px; }
+
 .projectHover {
-  transition: .2s ease; }
+  transition: .2s ease;
+  color: white;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1px;
+  transition: .2s all ease; }
 
 .projectHover:hover {
-  color: pink; }
+  color: #000; }
 
 #hero {
   width: 100vw;
@@ -367,12 +381,21 @@ span {
   overflow: hidden; }
 
 .heroParentProjects {
-  display: flex;
+  display: block;
   justify-content: center;
   align-content: center;
-  text-align: center; }
+  text-align: left;
+  padding-top: 25px; }
 
 .centerHelper {
   display: table-cell;
   vertical-align: middle;
-  text-align: center; }
+  text-align: left; }
+
+.introText {
+  margin-left: 75px;
+  font-size: 45px; }
+
+ul {
+  font-size: 25px;
+  margin-left: 45px; }
